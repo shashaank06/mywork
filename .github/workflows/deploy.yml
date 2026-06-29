@@ -20,7 +20,7 @@ jobs:
           hugo-version: '0.140.0'
 
       - name: Build site
-        run: hugo --source portfolio --destination public --verbose
+        run: hugo --source portfolio --destination public
 
       - name: Debug output
         run: |
