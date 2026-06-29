@@ -20,7 +20,16 @@ jobs:
           hugo-version: '0.140.0'
 
       - name: Build site
-        run: hugo --source portfolio --destination public
+        run: hugo --source portfolio --destination public --verbose
+
+      - name: Debug: List directories
+        run: |
+          echo "Current directory:"
+          pwd
+          echo "Root directory contents:"
+          ls -la
+          echo "Portfolio directory contents:"
+          ls -la portfolio/ || echo "portfolio dir not found"
 
       - name: Verify build output
         run: |
