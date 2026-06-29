@@ -8,72 +8,48 @@ section:
   template: sections/about.html
 
 # your designation
-designation: Software Engineer @ 100Devs
+designation: Data Engineer
 # your company information
 company:
-  # name: Example Co.
-  # url: "https://www.example.com"
+  name: Optum
+  url: "https://www.optum.com/"
 
 # your resume. this file path should be relative to you "static" directory
 # resume: "files/resume.pdf"
 
 # a summary about you
-summary: "I am a passionate Software Developer with a MS in Media Design (Human Computer Interaction) & Business Management (CEMS MIM). I love tinkering stuff such as [3D modeling & 3D printing](https://drive.google.com/drive/folders/1dzTIsofR7N725ZpPs37i80UeF3YN4G7L)! Feel free to check out my work [here](https://drive.google.com/drive/folders/1mcAck_AIjlUElgycj54-B1_xnRDOImnB)!"
+summary: "Data Engineer with strong expertise in Azure Data Factory, Databricks, Azure Synapse, ETL/ELT, Python, PySpark, SQL/PLSQL, and healthcare analytics. I build enterprise-scale healthcare data solutions for claims, clinical, pharmacy, and lab data while improving data quality, risk scoring, and operational decision-making."
 
 # your social links
-# give as many as you want. use font-awesome for the icons.
 socialLinks:
 - name: Github
   icon: "fab fa-github"
-  url: "https://github.com/Code4Dopamine"
+  url: "https://github.com/shashaank06"
 
 - name: LinkedIn
   icon: "fab fa-linkedin"
-  url: "https://www.linkedin.com/in/edwardcwu/"
+  url: "https://www.linkedin.com/in/shashaank-reddy-g/"
 
-# === Enable Later ===
-# - name: Twitter
-#   icon: "fab fa-twitter"
-#   url: "#"
+- name: Email
+  icon: "fas fa-envelope"
+  url: "mailto:shashaankr.gurrala@gmail.com"
 
-# your resume. this file path should be relative to you "static" directory
-# resume: "files/resume.pdf"
-
+- name: Phone
+  icon: "fas fa-phone"
+  url: "tel:+13179610506"
 
 # === BADGES ===
-badges:
-
 - type: certification
-  name: Google Cloud Badges
-  url: "https://www.cloudskillsboost.google/public_profiles/f661e139-ba3d-410e-8ed8-0ffce962b446"
+  name: Generative AI for Everyone
+  url: "https://www.udemy.com/"
   badge: "https://i.imgur.com/sLSBj7b.png"
 
 - type: certification
-  name: Solidworks Associate - Mechanical Design
-  url: "https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-SZNE5KJPP9"
-  badge: "https://images.credly.com/images/4ea912ef-6fc0-4d63-bdcf-3f1fa0e49ebf/3DX-3DX-SWEDU.png"
+  name: Udemy Certified Complete Python Bootcamp
+  url: "https://www.udemy.com/"
+  badge: "https://i.imgur.com/sLSBj7b.png"
 
 - type: certification
-  name: 3DSMax Professional Certificate 2014
-  url: "https://drive.google.com/file/d/0BzqYq9NaLvzXbk1NM0YyM0kzbmc/view?usp=sharing&resourcekey=0-MPiYyvWjVKY9CzL6ajtK6w"
-  badge: "https://images.credly.com/size/340x340/images/11457cd1-93fa-4dde-8294-76b913c17e75/Autodesk_3DS_professional_NV.png"
-
-
-# === Sample Code ===
-# - type: certification
-#   name: Certified Kubernetes Security Specialist
-#   url: "https://www.credly.com/org/the-linux-foundation/badge/exam-developer-certified-kubernetes-security-specialist"
-#   badge: "https://images.credly.com/size/680x680/images/f4bf92ed-8985-40b2-bc07-2f9308780854/kubernetes-security-specialist-logo-examdev.png"
-
-# your soft skills
-# give the percentage between 50 to 100 with 5 intervals.
-# currently supported colors: blue, yellow, pink, green, sky, orange
-
-# ========== Disabled ==========
-# softSkills:
-# - name: Leadership
-#   percentage: 85
-#   color: blue
-# - name: Team Work
-#   percentage: 90
-#   color: yellow
+  name: Udemy Certified Machine Learning A-Z
+  url: "https://www.udemy.com/"
+  badge: "https://i.imgur.com/sLSBj7b.png"

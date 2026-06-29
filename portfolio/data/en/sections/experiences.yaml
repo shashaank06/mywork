@@ -5,68 +5,56 @@ section:
   enable: true
   weight: 2
   showOnNavbar: true
-  # Can optionally hide the title in sections
-  # hideTitle: true 
 
 # Your experiences
 experiences:
 - company:
-    name: 100Devs
-    url: "#"
-    location: Remote (San Francisco, California)
-    # overview: Web Dev Agency
+    name: Optum
+    url: "https://www.optum.com/"
+    location: United States
   positions:
-  - designation: Full Stack Software Developer
-    start: Jan 2022
-    # don't provide end date if you are currently working there. It will be replaced by "Present"
-    # end: Dec 2020
-    # give some points about what was your responsibilities at the company.
+  - designation: Data Engineer
+    start: January 2024
     responsibilities:
-    - Find and communicate with clients on developing websites
-    - Creating responsive modern websites with HTML/CSS/Javascript
-    - Building Full Stack Web Applications
+    - Build healthcare data solutions using Azure Data Factory, Databricks, PySpark, Python, and SQL.
+    - Develop enterprise-scale pipelines for Medicare Advantage risk adjustment, claims, clinical, pharmacy, and lab data.
+    - Implement HCC mapping logic, suspect and recapture models, and provider outreach analytics.
+    - Support accurate risk scoring, compliance, and operational analytics through data engineering best practices.
 
 - company:
-    name: Tokyo Coding Club
-    url: "https://www.tokyocodingclub.com/"
-    location: Minato-ku, Tokyo, Japan
-    overview: (Part-time) Help kids learn about technology and teach them the fundamentals of CS + Building & Prototyping Products using 3D Printing technology.
+    name: Illinois State University
+    url: "https://illinoisstate.edu/"
+    location: United States
   positions:
-  - designation: Tech Instructor
-    start: January 2021
-    end: March 2022
+  - designation: Student Technology Specialist
+    start: July 2022
+    end: December 2023
     responsibilities:
-    - Taught studnets age 7-12 Scratch / Scratch Jr, Sphero Robotic, Minecraft Education, and MakeCode Arcade.
-    - Taught students 13+ Java and Python Fundamentals + AP Computer Science Prep.
-    - Taught students fundamentals of CAD Design (3D Modeling) via Autodesk Fusion 360 & 3D Printing using ABS / Resin.
+    - Supported technology systems and helped students and staff with academic software and technical tools.
 
 - company:
-    name: MagellanGPS
-    url: "https://www.example.com"
-    location: San Dimas, California, USA
-    overview: Portable GPS navigation consumer electronics company (part of MiTAC Corporation)
+    name: Adobe
+    url: "https://www.adobe.com/"
+    location: United States
   positions:
-  - designation: Software Engineer (Configuration Management)
-    start: Jun 2015
-    end: Jan 2016
+  - designation: Student Ambassador
+    start: January 2022
+    end: June 2022
     responsibilities:
-    # - === UX Design [SmartDeviceLink(SDL) Project] ===
-    - \[UXDesign\] Created Userflow, Wireframes and Prototype for Navigation App (SDL Platform).
-    - \[UXDesign\] Reviewed upcoming UI/UX Design proposals.
+    - Promoted Creative Cloud tools through workshops, social media, and student engagement.
+    - Built creative community connections and helped peers learn Adobe applications.
 
-    # - === Configuration Management / Automation ===
-    - Handled Software & Map (OTA) updates of devices via Content Manager & Amazon AWS + updated documentation. Improved operation from 1 week to 1-2 working days.
-    - Maintained Automation software build scripts & servers (Windows Server/ CentOS & Ubuntu (Linux - Android Dev) / MacOS )
-    - Performed Branch configuration on SVN repositories.
-    - Troubleshoot, Packaged & Delivered software to clients via physical copies & Apps Stores (Apple/Google).
-
-    - === IT /Administrative ===
-    - Maintained onsite server room operation with collaboration from oversea engineering team (HQ).
-    - Administrator of Atlassian JIRA and Confluence (Workflows, Task Tracking, ...) (promoted after 1 year)
-
-    # # - === UX Design [SmartDeviceLink(SDL) Project] ===
-    # - Userflow, Wireframes and Prototype for porting existing Navigation app onto SDL Platform.
-    # - Worked with Product Manager reviewing upcoming UI/UX Design proposals.
+- company:
+    name: OpenText
+    url: "https://www.opentext.com/"
+    location: Chennai, Tamil Nadu, India
+  positions:
+  - designation: Data Engineer
+    start: June 2020
+    end: December 2021
+    responsibilities:
+    - Worked on data engineering and analytics solutions using enterprise data platforms.
+    - Collaborated with cross-functional teams to deliver data pipelines and reporting.
 
     # # - === Configuration Management / Automation ===
     # - Handled Software & Map (OTA) updates of devices via Content Manager & Amazon AWS and documentation. Improved operation from 1 week to 1-2 working days.
