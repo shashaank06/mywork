@@ -21,7 +21,7 @@ jobs:
 
       - name: Build site
         run: |
-          hugo --source portfolio --destination public 2>&1
+          hugo --source portfolio --destination "${{ github.workspace }}/public" 2>&1
           echo "Exit code: $?"
 
       - name: Debug output
