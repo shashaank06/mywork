@@ -22,14 +22,11 @@ jobs:
       - name: Build site
         run: hugo --source portfolio --destination public --verbose
 
-      - name: Debug: List directories
+      - name: Debug output
         run: |
-          echo "Current directory:"
           pwd
-          echo "Root directory contents:"
           ls -la
-          echo "Portfolio directory contents:"
-          ls -la portfolio/ || echo "portfolio dir not found"
+          ls -la portfolio/ || true
 
       - name: Verify build output
         run: |
