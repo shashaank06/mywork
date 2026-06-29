@@ -20,13 +20,18 @@ jobs:
           hugo-version: '0.116.0'
 
       - name: Build site
-        run: hugo --source portfolio --destination ./public
+        run: hugo --source portfolio --destination public
+
+      - name: Verify build output
+        run: |
+          ls -la public
+          echo "build output directory exists"
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           publish_branch: gh-pages
-          publish_dir: ./public
+          publish_dir: public
           github_token: ${{ secrets.GITHUB_TOKEN }}
           user_name: github-actions[bot]
           user_email: github-actions[bot]@users.noreply.github.com
