@@ -25,19 +25,11 @@ jobs:
           hugo-version: '0.140.0'
 
       - name: Build site
-        run: |
-          hugo --source portfolio --destination "${{ github.workspace }}/public" 2>&1
-          echo "Exit code: $?"
-
-      - name: Debug output
-        run: |
-          pwd
-          ls -la
-          find . -maxdepth 2 -type d -name "public" 2>/dev/null || echo "No public dir found"
+        run: hugo --source portfolio --destination "${{ github.workspace }}/public"
 
       - name: Verify build output
         run: |
-          ls -la public
+          ls -la public | head -20
           echo "build output directory exists"
 
       - name: Deploy to GitHub Pages
