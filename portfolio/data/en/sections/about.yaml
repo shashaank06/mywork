@@ -1,6 +1,6 @@
 # section information
 section:
-  name: About
+  name: About Me
   id: about
   enable: true
   weight: 1
@@ -8,7 +8,7 @@ section:
   template: sections/about.html
 
 # your designation
-designation: Data Engineer
+designation: Data Engineer | Azure | Databricks | ETL/ELT
 # your company information
 company:
   name: Optum
@@ -18,7 +18,7 @@ company:
 # resume: "files/resume.pdf"
 
 # a summary about you
-summary: "Data Engineer with strong expertise in Azure Data Factory, Databricks, Azure Synapse, ETL/ELT, Python, PySpark, SQL/PLSQL, and healthcare analytics. I build enterprise-scale healthcare data solutions for claims, clinical, pharmacy, and lab data while improving data quality, risk scoring, and operational decision-making."
+summary: "Results-driven Data Engineer with 4+ years of enterprise experience building scalable healthcare data solutions. Expert in Azure Data Factory, Databricks, PySpark, and SQL. Proven track record designing and implementing ETL/ELT pipelines processing millions of healthcare records. Passionate about data quality, automation, and building solutions that drive business impact."
 
 # your social links
 socialLinks:

@@ -1,6 +1,6 @@
 baseURL: "https://shashaank06.github.io/mywork/"
 locale: en-us
-title: "Shashaank06 Portfolio"
+title: "Shashaank Reddy - Data Engineer Portfolio"
 theme: "toha"
 
 languages:
@@ -29,20 +29,47 @@ params:
   enableTOC: false
   newsletter:
     enable: false
+  
+  # Professional styling and features
+  darkMode:
+    enable: true
+    default: dark
+  
+  socialIcons:
+    - name: "linkedin"
+      url: "https://www.linkedin.com/in/shashaank-reddy-g/"
+    - name: "github"
+      url: "https://github.com/shashaank06"
+    - name: "email"
+      url: "mailto:shashaankr.gurrala@gmail.com"
+  
+  features:
+    analytics:
+      enable: false
+    comment:
+      enable: false
 
-copyright: © 2026
+copyright: © 2026 Shashaank Reddy. All rights reserved.
 
-description: Portfolio of an aspiring data engineer building Python, SQL, ETL, and data pipeline skills.
+description: Data Engineer specializing in Azure, Databricks, ETL/ELT pipelines, and healthcare analytics solutions.
 
-name: "Shashaank"
+name: "Shashaank Reddy"
 nickname: "Shashaank"
-greeting: "Hi, I am"
+greeting: "Hi, I'm"
+
+# Professional author metadata
+author:
+  name: "Shashaank Reddy"
+  email: "shashaankr.gurrala@gmail.com"
+  image: "/images/author/profile.png"
 
 contactInfo:
   github: shashaank06
+  linkedin: shashaank-reddy-g
+  email: shashaankr.gurrala@gmail.com
 
 summary:
-  - I am an aspiring Data Engineer focused on ETL pipelines, SQL analytics, and automated data workflows.
-  - I build hands-on projects using Python, Pandas, Spark, and cloud data tools.
-  - I am learning by building example data pipelines and improving data quality through projects.
-  - Lets connect and grow in data engineering together.
+  - Data Engineer with enterprise-scale experience at Optum building healthcare data solutions.
+  - Expertise in Azure Data Factory, Databricks, PySpark, Python, SQL, and ETL/ELT pipeline design.
+  - Passionate about data quality, automation, and solving complex analytics challenges.
+  - Continuously learning cloud technologies, modern data platforms, and data engineering best practices.
