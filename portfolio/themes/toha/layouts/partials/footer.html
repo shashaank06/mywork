@@ -1,15 +1,15 @@
 {{/*  variables for enabling/disabling parts of the footer  */}}
-{{ $footerEnabled      := site.Params.footer.enable             | default true }}
-{{ $navigationEnabled  := site.Params.footer.navigation.enable  | default true }}
-{{ $customMenusEnabled := site.Params.footer.navigation.customMenus | default true }}
-{{ $contactMeEnabled   := site.Params.footer.contactMe.enable   | default true }}
-{{ $newsletterEnabled  := site.Params.footer.newsletter.enable  | default true }}
-{{ $credentialsEnabled := site.Params.footer.credentials.enable | default true }}
-{{ $disclaimerEnabled  := site.Params.footer.disclaimer.enable  | default false }}
+{{ $footerEnabled      := .Site.Params.footer.enable             | default true }}
+{{ $navigationEnabled  := .Site.Params.footer.navigation.enable  | default true }}
+{{ $customMenusEnabled := .Site.Params.footer.navigation.customMenus | default true }}
+{{ $contactMeEnabled   := .Site.Params.footer.contactMe.enable   | default true }}
+{{ $newsletterEnabled  := .Site.Params.footer.newsletter.enable  | default true }}
+{{ $credentialsEnabled := .Site.Params.footer.credentials.enable | default true }}
+{{ $disclaimerEnabled  := .Site.Params.footer.disclaimer.enable  | default false }}
 
 {{/*  Keep backward compatibility for the newsletter function */}}
-{{ if site.Params.newsletter }}
-  {{ if site.Params.newsletter.enable }}
+{{ if .Site.Params.newsletter }}
+  {{ if .Site.Params.newsletter.enable }}
     {{ $newsletterEnabled = true }}
   {{ else }}
       {{ $newsletterEnabled = false }}
@@ -17,24 +17,24 @@
 {{ end }}
 
 {{ if $footerEnabled }}
-  {{ $author:= site.Data.author }}
-  {{ if (index site.Data site.Language.Lang).author }}
-    {{ $author = (index site.Data site.Language.Lang).author }}
+  {{ $author:= .Site.Data.author }}
+  {{ if (index .Site.Data .Site.Language.Lang).author }}
+    {{ $author = (index .Site.Data .Site.Language.Lang).author }}
   {{ end }}
 
-  {{ $sections:= site.Data.sections }}
-  {{ if (index site.Data site.Language.Lang).sections }}
-    {{ $sections = (index site.Data site.Language.Lang).sections }}
+  {{ $sections:= .Site.Data.sections }}
+  {{ if (index .Site.Data .Site.Language.Lang).sections }}
+    {{ $sections = (index .Site.Data .Site.Language.Lang).sections }}
   {{ end }}
 
-  {{ $customMenus := site.Params.customMenus }}
-  {{ if (index site.Data site.Language.Lang).site.customMenus }}
-    {{ $customMenus = (index site.Data site.Language.Lang).site.customMenus }}
+  {{ $customMenus := .Site.Params.customMenus }}
+  {{ if (index .Site.Data .Site.Language.Lang).site.customMenus }}
+    {{ $customMenus = (index .Site.Data .Site.Language.Lang).site.customMenus }}
   {{ end }}
 
   {{ $copyrightNotice := now.Format "2006" | printf "© %s Copyright."}}
-  {{ if (index site.Data site.Language.Lang).site }}
-    {{ $siteConfig := (index site.Data site.Language.Lang).site }}
+  {{ if (index .Site.Data .Site.Language.Lang).site }}
+    {{ $siteConfig := (index .Site.Data .Site.Language.Lang).site }}
     {{ if $siteConfig.copyright }}
       {{ $copyrightNotice = $siteConfig.copyright }}
     {{ end }}
@@ -42,7 +42,7 @@
 
 
   {{ $disclaimer := "" }}
-  {{ $siteConfig := (index site.Data site.Language.Lang).site }}
+  {{ $siteConfig := (index .Site.Data .Site.Language.Lang).site }}
   {{ if $siteConfig.disclaimer }}
     {{ $disclaimer = $siteConfig.disclaimer }}
   {{ end }}
@@ -124,12 +124,12 @@
         {{ end }}
         <!-------------- Newsletter --------------->
         {{ if $newsletterEnabled }}
-          {{ $provider := site.Params.footer.newsletter.provider }}
+          {{ $provider := .Site.Params.footer.newsletter.provider }}
           <div class="col-md-4 col-sm-12">
             <p>{{ i18n "newsletter_text" }}</p>
-            {{ if and (eq $provider "mailchimp") site.Params.footer.newsletter.mailchimpURL }}  <!-- mailchimp -->
+            {{ if and (eq $provider "mailchimp") .Site.Params.footer.newsletter.mailchimpURL }}  <!-- mailchimp -->
               <form
-                action="{{ site.Params.footer.newsletter.mailchimpURL }}"
+                action="{{ .Site.Params.footer.newsletter.mailchimpURL }}"
                 method="post"
                 id="mc-embedded-subscribe-form"
                 name="mc-embedded-subscribe-form"

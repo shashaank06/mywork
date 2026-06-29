@@ -1,4 +1,4 @@
-{{ with site.Params.features.support }}
+{{ with .Site.Params.features.support }}
     {{ if .enabled }}
         <!-- Enable Ko-Fi floating button -->
         {{ with .kofi }}

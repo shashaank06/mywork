@@ -41,9 +41,9 @@
     {{- partial "sections/home.html" . -}}
 
     <!--- ADD OPTIONAL SECTIONS ----------->
-    {{ $sections:= site.Data.sections }}
-    {{ if (index site.Data site.Language.Lang).sections }}
-      {{ $sections = (index site.Data site.Language.Lang).sections }}
+    {{ $sections:= .Site.Data.sections }}
+    {{ if (index .Site.Data .Site.Language.Lang).sections }}
+      {{ $sections = (index .Site.Data .Site.Language.Lang).sections }}
     {{ end }}
 
     {{ if $sections }}
@@ -68,7 +68,7 @@
     {{ end }}
 
     <!--- ADD FOOTER ----------------------->
-    {{ $footerTemplate:= site.Params.footer.template | default "footer.html" }}
+    {{ $footerTemplate:= .Site.Params.footer.template | default "footer.html" }}
     {{- partial $footerTemplate . -}}
 
     <!--- ADD COMMON SCRIPTS --------------->

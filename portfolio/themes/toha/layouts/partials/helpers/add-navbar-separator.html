@@ -1,19 +1,19 @@
 {{ $addNavbarSeparator:= false }}
 
 {{/*  If "blog" feature is enabled, then add navbar separator  */}}
-{{ if site.Params.features.blog.enable }}
+{{ if .Site.Params.features.blog.enable }}
     {{ $addNavbarSeparator = true }}
 {{ end }}
 
 {{/*  If "notes" feature is enabled, then add navbar separator  */}}
-{{ if site.Params.features.notes.enable }}
+{{ if .Site.Params.features.notes.enable }}
     {{ $addNavbarSeparator = true }}
 {{ end }}
 
 {{/*  If site has custom menus, then add navbar separator  */}}
-{{ $customMenus := site.Params.customMenus }}
-{{ if (index site.Data site.Language.Lang).site.customMenus }}
-  {{ $customMenus = (index site.Data site.Language.Lang).site.customMenus }}
+{{ $customMenus := .Site.Params.customMenus }}
+{{ if (index .Site.Data .Site.Language.Lang).site.customMenus }}
+  {{ $customMenus = (index .Site.Data .Site.Language.Lang).site.customMenus }}
 {{ end }}
 
 {{ if $customMenus }}

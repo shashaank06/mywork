@@ -4,11 +4,7 @@
     <title>{{ .Page.Title }}</title>
     <!------ ADD COMMON HEADERS -------->
     {{- partial "header.html" . -}}
-    {{ template "_internal/opengraph.html" . }}
-
-    <!------ ADD PAGE SPECIFIC HEADERS ------->
-    {{ block "header" . }} {{ end }}
-
+    {{ partial "opengraph.html" . }}
     <!--================= add analytics if enabled =========================-->
     {{- partial "analytics.html" . -}}
 
@@ -30,7 +26,7 @@
     </div>
 
     <!------- ADD FOOTER ------------>
-    {{ $footerTemplate:= site.Params.footer.template | default "footer.html" }}
+    {{ $footerTemplate:= .Site.Params.footer.template | default "footer.html" }}
     {{- partial $footerTemplate . -}}
 
     <!------- ADD COMMON SCRIPTS ------->

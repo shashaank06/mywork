@@ -1,5 +1,5 @@
 {{ $pageURL:= .RelPermalink }}
-{{ if site.IsMultiLingual }}
+{{ if gt (len .Site.Languages) 1 }}
     {{ $pageURL = strings.TrimPrefix (path.Join "/" .Language.Lang) $pageURL }}
 {{ end }}
 
@@ -7,7 +7,7 @@
     <a class="btn dropdown-toggle" href="#" id="languageSelector" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         {{ $countryCode := partial "helpers/country-code.html" . }}
         <span class="flag-icon flag-icon-{{$countryCode}}"></span>
-        {{ site.Language.LanguageName }}
+        {{ .Site.Language.LanguageName }}
     </a>
     <div class="dropdown-menu" aria-labelledby="languageSelector">
         {{ range .Translations }}

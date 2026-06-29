@@ -14,7 +14,7 @@
 
 
 {{/*  if the user specify a country code for a language via "params.flagOverwrites" field, then use it.  */}}
-{{ range site.Params.flagOverwrites }}
+{{ range .Site.Params.flagOverwrites }}
     {{ if eq $languageCode .languageCode }}
         {{ $countryCode = .countryCode }}
     {{ end }}

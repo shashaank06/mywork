@@ -1,11 +1,11 @@
 baseURL: "https://shashaank06.github.io/mywork/"
-languageCode: en-us
+locale: en-us
 title: "Shashaank06 Portfolio"
 theme: "toha"
 
 languages:
   en:
-    languageName: English
+    label: English
     weight: 1
 
 markup:

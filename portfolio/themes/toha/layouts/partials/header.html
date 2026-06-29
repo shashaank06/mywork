@@ -17,8 +17,8 @@
 
 <!--================= fab-icon =========================-->
 {{/* add favicon only if the site author has provided the the favicon */}}
-{{ if site.Params.logo.favicon }}
-  {{ $favicon := site.Params.logo.favicon }}
+{{ if .Site.Params.logo.favicon }}
+  {{ $favicon := .Site.Params.logo.favicon }}
 
   {{/* resize the favicon. don't resize svg because it is not supported */}}
   {{ $favicon = resources.Get $favicon }}

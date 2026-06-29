@@ -5,8 +5,8 @@
 <!-- List all the pages. It uses the sidebar menu to discover the page order. -->
 {{ $pages := slice }}
 
-{{ if isset site.Menus "sidebar" }}
-  {{ $pages = partial "helpers/get-pages.html" site.Menus.sidebar }}
+{{ if isset .Site.Menus "sidebar" }}
+  {{ $pages = partial "helpers/get-pages.html" .Site.Menus.sidebar }}
 {{ end }}
 
 <!-- Now, find the current page index in the pages list. Then, find previous page and next page. -->

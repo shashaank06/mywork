@@ -19,8 +19,16 @@
   {{ end }}
   <div class="container">
     <div class="row" id="recent-post-cards">
-      {{ range first $numShow (where site.RegularPages.ByDate.Reverse "Type" "in" "posts" )}}
-        {{ partial "cards/recent-post.html" . }}
+      {{ $posts := .Site.RegularPages }}
+      {{ if not $posts }}
+        {{ $posts = .Site.Pages }}
+      {{ end }}
+      {{ if $posts }}
+        {{ $filtered := where $posts "Type" "in" "posts" }}
+        {{ $sorted := sort $filtered "Date" "desc" }}
+        {{ range first $numShow $sorted }}
+          {{ partial "cards/recent-post.html" . }}
+        {{ end }}
       {{ end }}
     </div>
   </div>
