@@ -1,0 +1,48 @@
+baseURL: "https://shashaank06.github.io/mywork/"
+languageCode: en-us
+title: "Shashaank06 Portfolio"
+theme: "toha"
+
+languages:
+  en:
+    languageName: English
+    weight: 1
+
+markup:
+  tableOfContents:
+    startLevel: 2
+    endLevel: 6
+    ordered: false
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+enableEmoji: true
+
+params:
+  background: /images/background.jpg
+  gitRepo: https://github.com/shashaank06/mywork
+  enableBlogPost: false
+  enableTOC: false
+  newsletter:
+    enable: false
+
+copyright: © 2026
+
+description: Portfolio of an aspiring data engineer building Python, SQL, ETL, and data pipeline skills.
+
+name: "Shashaank"
+nickname: "Shashaank"
+greeting: "Hi, I am"
+
+contactInfo:
+  github: shashaank06
+
+summary:
+  - I am an aspiring Data Engineer focused on ETL pipelines, SQL analytics, and automated data workflows.
+  - I build hands-on projects using Python, Pandas, Spark, and cloud data tools.
+  - I am learning by building example data pipelines and improving data quality through projects.
+  - Lets connect and grow in data engineering together.

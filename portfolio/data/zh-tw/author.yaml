@@ -1,0 +1,24 @@
+# some information about you
+name: "Edward Wu"
+nickname: "Edward"
+# greeting message before your name. it will default to "Hi! I am" if not provided
+greeting: "Hi, I am"
+# image: "images/author/john.png"
+image: "images/author/profile.png"
+# image: "![temp](https://i.imgur.com/V4RclNb.png 'title')"
+# image: "{{< figure src="https://i.imgur.com/V4RclNb.png" title="Cool Image" class="pull-left" >}}"
+# image: [test](https://i.imgur.com/V4RclNb.png)
+
+contactInfo:
+  # email: "johndoe@example.com"
+  # phone: "+0123456789"
+  linkedin: edwardcwu
+  github: Code4Dopamine
+
+# some summary about what you do
+summary:
+  - I am a Software Developer.
+  - I am a UX Researcher / Designer.
+  - I love Tinkering, 3D Modeling, and 3D Printing.
+  # - I work on open-source projects
+  - Let's Connect! :) 

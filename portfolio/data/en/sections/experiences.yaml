@@ -1,0 +1,78 @@
+# section information
+section:
+  name: Experiences
+  id: experiences
+  enable: true
+  weight: 2
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true 
+
+# Your experiences
+experiences:
+- company:
+    name: 100Devs
+    url: "#"
+    location: Remote (San Francisco, California)
+    # overview: Web Dev Agency
+  positions:
+  - designation: Full Stack Software Developer
+    start: Jan 2022
+    # don't provide end date if you are currently working there. It will be replaced by "Present"
+    # end: Dec 2020
+    # give some points about what was your responsibilities at the company.
+    responsibilities:
+    - Find and communicate with clients on developing websites
+    - Creating responsive modern websites with HTML/CSS/Javascript
+    - Building Full Stack Web Applications
+
+- company:
+    name: Tokyo Coding Club
+    url: "https://www.tokyocodingclub.com/"
+    location: Minato-ku, Tokyo, Japan
+    overview: (Part-time) Help kids learn about technology and teach them the fundamentals of CS + Building & Prototyping Products using 3D Printing technology.
+  positions:
+  - designation: Tech Instructor
+    start: January 2021
+    end: March 2022
+    responsibilities:
+    - Taught studnets age 7-12 Scratch / Scratch Jr, Sphero Robotic, Minecraft Education, and MakeCode Arcade.
+    - Taught students 13+ Java and Python Fundamentals + AP Computer Science Prep.
+    - Taught students fundamentals of CAD Design (3D Modeling) via Autodesk Fusion 360 & 3D Printing using ABS / Resin.
+
+- company:
+    name: MagellanGPS
+    url: "https://www.example.com"
+    location: San Dimas, California, USA
+    overview: Portable GPS navigation consumer electronics company (part of MiTAC Corporation)
+  positions:
+  - designation: Software Engineer (Configuration Management)
+    start: Jun 2015
+    end: Jan 2016
+    responsibilities:
+    # - === UX Design [SmartDeviceLink(SDL) Project] ===
+    - \[UXDesign\] Created Userflow, Wireframes and Prototype for Navigation App (SDL Platform).
+    - \[UXDesign\] Reviewed upcoming UI/UX Design proposals.
+
+    # - === Configuration Management / Automation ===
+    - Handled Software & Map (OTA) updates of devices via Content Manager & Amazon AWS + updated documentation. Improved operation from 1 week to 1-2 working days.
+    - Maintained Automation software build scripts & servers (Windows Server/ CentOS & Ubuntu (Linux - Android Dev) / MacOS )
+    - Performed Branch configuration on SVN repositories.
+    - Troubleshoot, Packaged & Delivered software to clients via physical copies & Apps Stores (Apple/Google).
+
+    - === IT /Administrative ===
+    - Maintained onsite server room operation with collaboration from oversea engineering team (HQ).
+    - Administrator of Atlassian JIRA and Confluence (Workflows, Task Tracking, ...) (promoted after 1 year)
+
+    # # - === UX Design [SmartDeviceLink(SDL) Project] ===
+    # - Userflow, Wireframes and Prototype for porting existing Navigation app onto SDL Platform.
+    # - Worked with Product Manager reviewing upcoming UI/UX Design proposals.
+
+    # # - === Configuration Management / Automation ===
+    # - Handled Software & Map (OTA) updates of devices via Content Manager & Amazon AWS and documentation. Improved operation from 1 week to 1-2 working days.
+    # - Maintained automated software build scripts & servers (Windows Server/ CentOS & Ubuntu (Linux - Android Dev) / MacOS ) and branch configuration on SVN repositories.
+    # - Handle Software Delivery to client & customers on both Apps Store (Apple/Google) environment and troubleshoot issues.
+
+    # # - === IT /Administrative ===
+    # - Handled onsite server room operation with collaboration from oversea engineering team (HQ).
+    # - Administrator of Atlassian JIRA and Confluence (Workflows, Task Tracking, ...) (promoted after 1 year)

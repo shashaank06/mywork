@@ -1,0 +1,100 @@
+# section information
+section:
+  name: 技能
+  id: skills
+  enable: true
+  weight: 3
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+# Your Skills.
+# Give a summary of you each skill in the summary section.
+skills:
+- name: HTML
+  logo: "/images/skills/html-1.svg"
+  summary: "Capable of writing and developing website in modern HTML5 Standard. Part of the Full-Stack Web Development."
+  # url: "#"
+
+- name: CSS
+  logo: "/images/skills/css-3.svg"
+  summary: "Part of the Full-Stack Web Development."
+  # url: "#"
+
+- name: Javascript
+  summary: "Capable of writing in Object-Oriented Programming and using modern WebAPI. Part of the Full-Stack Web Development."
+  logo: "/images/skills/logo-javascript.svg"
+  # url: "#"
+
+- name: React
+  summary: "Part of the Full-Stack Web Development."
+  logo: "/images/skills/react-2.svg"
+  # url: "#"
+
+- name: Python
+  summary: "Using it as the main scripting language with Numpy for parsing and developing animated graphs / data overviews."
+  logo: "/images/skills/python-5.svg"
+  # url: "#"
+
+- name: SQL
+  summary: "Capable of extracting big-data information and applying it in other application (Python, Java, Web, etc.)"
+  logo: "/images/skills/database.svg"
+  # url: "#"
+
+- name: Java
+  summary: "Object-oriented programming with NetBean IDE"
+  logo: "/images/skills/java-4.svg"
+  # url: "#"
+
+- name: Linux
+  summary: "Used CentOS for autobuilding & delivering Android Apps during work."
+  logo: "/images/skills/linux-tux.svg"
+
+- name: Embedded System Design
+  summary: "Have experience building Small robots via Arduino, ATMega32 chip, NodeMCU, etc. Used OpenCV libraries and coded in C/C++. Taught several students as robotics instructor."
+  logo: "/images/skills/arduino-1.svg"
+
+- name: Atlassian JIRA
+  summary: Proj. Mangement Software used at Magellan. Responsibility include linking Autobuild releases and tracking changes. Promoted to Admin status after 1 year, and help created and maintain dashboards, workflows, tasklists for my several projects in Engineering and IT depeartment.
+  logo: "images/skills/jira-1.svg"
+
+- name: Atlassian Confluence
+  summary: Wrote and Updated several documentation regarding product release and autobuild funcionalities & changes
+  logo: "images/skills/confluence-1.svg"
+
+- name: Perl
+  summary: Help maintain Autobuild server scripts (created previously by in-house team), such as branch config, versioning, etc.
+  logo: "images/skills/perl.svg"
+
+# - name:
+#   summary:
+#   logo: "images/skills/"
+
+# - name: Go Development
+#   logo: /images/sections/skills/go.png
+#   summary: "Using as the main language for professional development. Capable of writing scalable, testable, and maintainable program."
+#   url: "https://golang.org/"
+
+# - name: Cloud Computing
+#   logo: /images/sections/skills/cloud.png
+#   summary: "Worked with most of the major clouds such as GCP, AWS, Azure etc."
+
+# - name: Docker
+#   logo: /images/sections/skills/docker.svg
+#   summary: "Write most of the programs as dockerized container. Experienced with multi-stage, multi-arch build process."
+#   url: "https://www.docker.com/"
+
+# - name: Prometheus
+#   logo: /images/sections/skills/prometheus.png
+#   summary: "Capable of setup, configure Prometheus metrics. Experienced with PromQL, AlertManager. Also, experienced with writing metric exporters."
+#   url: "https://prometheus.io/"
+
+
+# - name: Git
+#   logo: /images/sections/skills/git.png
+#   summary: "Experienced with git-based development. Mostly, use Github. Also, have experience in working with GitLab."
+#   url: "https://git-scm.com/"
+
+# - name: C++
+#   logo: /images/sections/skills/c++.png
+#   summary: "Know basic C/C++ programming. Used for contest programming and problem solving."
