@@ -4,8 +4,6 @@ on:
   push:
     branches:
       - portfolio-site
-      - main
-      - master
     paths:
       - 'resume-site/**'
       - '.github/workflows/deploy-site.yml'
