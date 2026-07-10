@@ -131,31 +131,33 @@ img {
   gap: 0.95rem;
 }
 
-.hero-metrics {
+.hero-actions {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 0.8rem;
-  margin-top: 0.35rem;
+  gap: 0.9rem;
+  margin-top: 0.6rem;
 }
 
-.metric-card {
-  padding: 0.9rem 0.95rem;
+.hero-action-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 64px;
+  padding: 0.9rem 1rem;
   border-radius: 16px;
-  background: rgba(255, 255, 255, 0.12);
-  border: 1px solid rgba(255, 255, 255, 0.16);
-  backdrop-filter: blur(10px);
-}
-
-.metric-card strong {
-  display: block;
-  font-size: 1.1rem;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   color: white;
-  margin-bottom: 0.25rem;
+  text-decoration: none;
+  font-weight: 700;
+  transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 8px 20px rgba(2, 8, 23, 0.12);
 }
 
-.metric-card span {
-  font-size: 0.9rem;
-  color: #dbeafe;
+.hero-action-card:hover {
+  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.22);
+  box-shadow: 0 12px 28px rgba(2, 8, 23, 0.2);
 }
 
 .eyebrow {
@@ -361,7 +363,7 @@ li + li {
     align-items: flex-start;
   }
 
-  .hero-metrics {
+  .hero-actions {
     grid-template-columns: 1fr;
   }
 
