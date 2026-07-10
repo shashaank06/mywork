@@ -152,13 +152,18 @@ h1 {
 
 .cta-row {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  align-items: center;
   gap: 0.9rem;
   margin-top: 1.4rem;
+  overflow-x: auto;
 }
 
 .btn {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
   padding: 0.85rem 1.2rem;
   border-radius: 999px;
   text-decoration: none;
@@ -332,6 +337,10 @@ li + li {
   .hero-layout {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .cta-row {
+    flex-wrap: nowrap;
   }
 
   .grid {
