@@ -1,43 +1,37 @@
-name: Build and Deploy Hugo Portfolio
+name: Deploy Static Resume Site
 
 on:
   push:
     branches:
       - portfolio-site
+    paths:
+      - 'resume-site/**'
+      - '.github/workflows/deploy.yml'
 
 permissions:
-  contents: write
+  contents: read
   pages: write
   id-token: write
 
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          fetch-depth: 0
-
-      - name: Install Hugo
-        uses: peaceiris/actions-hugo@v2
-        with:
-          hugo-version: '0.140.0'
-
-      - name: Build site
-        run: hugo --source portfolio --destination "${{ github.workspace }}/public"
-
-      - name: Verify build output
-        run: |
-          ls -la public | head -20
-          echo "build output directory exists"
+          path: './resume-site'
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          publish_branch: gh-pages
-          publish_dir: public
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          user_name: github-actions[bot]
-          user_email: github-actions[bot]@users.noreply.github.com
-          commit_message: 'Deploy portfolio site'
+        id: deployment
+        uses: actions/deploy-pages@v4
