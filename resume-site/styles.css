@@ -125,6 +125,11 @@ img {
   display: block;
 }
 
+.hero-photo-square {
+  object-position: center;
+  object-fit: cover;
+}
+
 .eyebrow {
   text-transform: uppercase;
   letter-spacing: 0.25em;
