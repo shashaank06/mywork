@@ -3,77 +3,248 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Shashaank Reddy Gurrala — Healthcare data engineering experience: risk adjustment, PHI-sensitive pipelines, HIPAA compliance." />
     <title>Healthcare Experience | Shashaank Reddy Gurrala</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="background-orb orb-one"></div>
-    <div class="background-orb orb-two"></div>
-
-    <header class="hero hero-inner">
-      <nav class="nav">
+    <!-- ====== NAV ====== -->
+    <nav class="nav" id="nav">
+      <a href="index.html" class="nav-logo">SG<span class="logo-dot">.</span></a>
+      <div class="nav-links" id="nav-links">
         <a href="index.html">Home</a>
         <a href="index.html#experience">Experience</a>
         <a href="index.html#skills">Skills</a>
-      </nav>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+      <a class="nav-cta" href="assets/Shashaank_Gurrala_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
 
-      <div class="hero-content">
-        <div class="hero-copy">
-          <p class="eyebrow">Healthcare Data Engineering</p>
-          <h1>Healthcare Experience</h1>
-          <p class="lead">
-            A dedicated page for recruiters and hiring teams looking for hands-on experience in healthcare analytics,
-            risk adjustment, PHI-sensitive data platforms, and cloud-native architecture.
-          </p>
-          <div class="cta-row">
-            <a class="btn btn-primary" href="assets/Shashaank_Gurrala_Resume.pdf" target="_blank" rel="noopener">Download Resume</a>
-            <a class="btn btn-secondary" href="index.html">Back to Main Profile</a>
-          </div>
+    <!-- ====== HERO ====== -->
+    <header class="hero" id="hero" style="min-height: auto; padding-top: 7rem; padding-bottom: 3rem;">
+      <div class="hero-bg-grid"></div>
+      <div class="hero-glow hero-glow-1"></div>
+      <div class="hero-glow hero-glow-2"></div>
+
+      <div class="hero-content reveal">
+        <p class="hero-eyebrow">Healthcare Data Engineering</p>
+        <h1 class="hero-title" style="font-size: clamp(2rem, 4vw, 3rem);">
+          Why Healthcare Teams <span class="gradient-text">Hire Me</span>
+        </h1>
+        <p class="hero-lead">
+          I build trusted data pipelines that support clinical, financial, and operational reporting
+          while respecting <strong>privacy, compliance, and performance</strong> requirements.
+          My work in risk-adjustment analytics and PHI-sensitive environments has helped teams
+          improve reliability, reduce processing time, and unlock better downstream insights.
+        </p>
+        <div class="hero-cta-row">
+          <a class="btn btn-primary" href="assets/Shashaank_Gurrala_Resume.pdf" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download Resume
+          </a>
+          <a class="btn btn-outline" href="index.html">Back to Full Profile</a>
         </div>
       </div>
     </header>
 
     <main>
-      <section class="section card intro-card">
-        <h2>Why Healthcare Teams Hire Me</h2>
-        <p>
-          I focus on building trusted data pipelines that support clinical, financial, and operational reporting while respecting privacy,
-          compliance, and performance requirements. My work in risk-adjustment analytics and PHI-sensitive environments has helped teams
-          improve reliability, reduce processing time, and unlock better downstream insights for healthcare decision-making.
-        </p>
+      <!-- ====== IMPACT METRICS ====== -->
+      <section class="metrics-banner" style="margin-top: -1rem;">
+        <div class="metrics-grid reveal">
+          <div class="metric">
+            <span class="metric-number" data-target="17">0</span>
+            <span class="metric-label">U.S. Health Plans Served</span>
+          </div>
+          <div class="metric">
+            <span class="metric-number" data-target="40">0</span><span class="metric-suffix">%</span>
+            <span class="metric-label">ETL Processing Reduction</span>
+          </div>
+          <div class="metric">
+            <span class="metric-number" data-target="2">0</span><span class="metric-suffix">+</span>
+            <span class="metric-label">Years Healthcare Focus</span>
+          </div>
+          <div class="metric">
+            <span class="metric-number" data-target="5">0</span>
+            <span class="metric-label">Data Domains Covered</span>
+          </div>
+        </div>
       </section>
 
-      <section class="section card">
-        <h2>Healthcare Impact Highlights</h2>
-        <ul>
-          <li>Architected and scaled ingestion pipelines for a prospective risk analytics platform serving 17 major U.S. health plans.</li>
-          <li>Supported risk-adjustment workflows with CDC and SCD Type 1/2 patterns to improve reporting latency and data reliability.</li>
-          <li>Implemented secure, governed data movement for PHI-sensitive datasets using Unity Catalog RBAC, Delta Lake, and Azure-native controls.</li>
-          <li>Delivered medallion architecture, automated QA, and SonarQube-aligned quality practices for analytics readiness.</li>
-        </ul>
+      <!-- ====== WHAT I DO ====== -->
+      <section class="section" style="max-width: 1120px; margin: 0 auto; padding-left: 2rem; padding-right: 2rem;">
+        <div class="section-header reveal">
+          <span class="section-number">01</span>
+          <h2>Healthcare Impact</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="projects-grid reveal">
+          <div class="project-card card">
+            <div class="project-icon project-icon-health">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            </div>
+            <h3>Risk-Adjustment Analytics</h3>
+            <p class="project-company">Optum — Medicare Advantage</p>
+            <p>Architected and scaled ingestion pipelines for a prospective risk analytics platform serving 17 major U.S. health plans. Supported HCC mapping logic, suspect and recapture models, and provider outreach analytics.</p>
+            <div class="project-impact">
+              <span>Claims data</span>
+              <span>Clinical data</span>
+              <span>Pharmacy & Lab</span>
+            </div>
+          </div>
+
+          <div class="project-card card">
+            <div class="project-icon project-icon-cloud">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3>PHI-Sensitive Data Governance</h3>
+            <p class="project-company">Unity Catalog + RBAC</p>
+            <p>Implemented secure, governed data movement for PHI-sensitive datasets using Unity Catalog RBAC, Delta Lake encryption, and Azure-native controls to meet HIPAA audit requirements.</p>
+            <div class="project-impact">
+              <span>HIPAA compliant</span>
+              <span>RBAC</span>
+              <span>Audit-ready</span>
+            </div>
+          </div>
+
+          <div class="project-card card">
+            <div class="project-icon project-icon-data">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
+            <h3>Medallion Architecture & QA</h3>
+            <p class="project-company">Bronze → Silver → Gold</p>
+            <p>Delivered medallion architecture with automated QA validation at each layer, ensuring data quality and SonarQube-aligned code quality practices for production analytics readiness.</p>
+            <div class="project-impact">
+              <span>Automated QA</span>
+              <span>SonarQube</span>
+              <span>Data quality</span>
+            </div>
+          </div>
+
+          <div class="project-card card">
+            <div class="project-icon project-icon-ai">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+            </div>
+            <h3>Low-Latency ETL Optimization</h3>
+            <p class="project-company">CDC + SCD Type 1/2</p>
+            <p>Re-engineered core ETL workflows with CDC and SCD Type 1/2 patterns, reducing daily processing time by 40% and enabling low-latency analytics for risk-adjustment reporting.</p>
+            <div class="project-impact">
+              <span>40% faster</span>
+              <span>CDC patterns</span>
+              <span>SCD Type 1/2</span>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <section class="section card">
-        <h2>Core Healthcare-Focused Capabilities</h2>
-        <div class="grid">
-          <div>
+      <!-- ====== CAPABILITIES ====== -->
+      <section class="section" style="max-width: 1120px; margin: 0 auto; padding-left: 2rem; padding-right: 2rem;">
+        <div class="section-header reveal">
+          <span class="section-number">02</span>
+          <h2>Core Capabilities</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="skills-grid reveal">
+          <div class="skill-category card">
+            <div class="skill-cat-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
             <h3>Data Platform Engineering</h3>
-            <p>Azure Data Factory, Databricks, Delta Lake, ADLS Gen2, Snowflake, Unity Catalog, and Microsoft Fabric.</p>
+            <div class="skill-tags">
+              <span class="skill-tag tag-primary">Azure Data Factory</span>
+              <span class="skill-tag tag-primary">Databricks</span>
+              <span class="skill-tag tag-primary">Delta Lake</span>
+              <span class="skill-tag tag-primary">ADLS Gen2</span>
+              <span class="skill-tag tag-secondary">Snowflake</span>
+              <span class="skill-tag tag-secondary">Unity Catalog</span>
+              <span class="skill-tag tag-secondary">Microsoft Fabric</span>
+            </div>
           </div>
-          <div>
+
+          <div class="skill-category card">
+            <div class="skill-cat-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
             <h3>Analytics & Compliance</h3>
-            <p>CDC, SCD Type 1/2, healthcare data validation, governance, and audit-friendly design for PHI-sensitive workloads.</p>
+            <div class="skill-tags">
+              <span class="skill-tag tag-primary">HIPAA</span>
+              <span class="skill-tag tag-primary">PHI Governance</span>
+              <span class="skill-tag tag-primary">Risk Adjustment</span>
+              <span class="skill-tag tag-secondary">CDC / SCD</span>
+              <span class="skill-tag tag-secondary">Data Validation</span>
+              <span class="skill-tag tag-secondary">Audit Design</span>
+            </div>
           </div>
-          <div>
+
+          <div class="skill-category card">
+            <div class="skill-cat-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            </div>
+            <h3>Healthcare Data Domains</h3>
+            <div class="skill-tags">
+              <span class="skill-tag tag-primary">Claims</span>
+              <span class="skill-tag tag-primary">Clinical</span>
+              <span class="skill-tag tag-primary">Pharmacy</span>
+              <span class="skill-tag tag-secondary">Lab Data</span>
+              <span class="skill-tag tag-secondary">HCC Mapping</span>
+              <span class="skill-tag tag-secondary">Provider Analytics</span>
+            </div>
+          </div>
+
+          <div class="skill-category card">
+            <div class="skill-cat-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
             <h3>Delivery & Automation</h3>
-            <p>CI/CD, automated QA, SonarQube, and AI-assisted development for faster, higher-quality delivery.</p>
+            <div class="skill-tags">
+              <span class="skill-tag tag-primary">CI/CD</span>
+              <span class="skill-tag tag-primary">Automated QA</span>
+              <span class="skill-tag tag-primary">SonarQube</span>
+              <span class="skill-tag tag-secondary">AI-Assisted Dev</span>
+              <span class="skill-tag tag-secondary">PySpark</span>
+              <span class="skill-tag tag-secondary">Python</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====== CTA ====== -->
+      <section class="section" style="max-width: 1120px; margin: 0 auto; padding: 3rem 2rem 4rem;">
+        <div class="reveal" style="text-align: center;">
+          <h2 style="font-size: 1.6rem; font-weight: 800; color: var(--heading); margin-bottom: 1rem;">
+            Looking for a healthcare data engineer?
+          </h2>
+          <p style="color: var(--text-muted); max-width: 560px; margin: 0 auto 2rem; line-height: 1.8;">
+            I'm open to opportunities in healthcare analytics, clinical data engineering, and cloud platform roles.
+            Let's talk about how I can help your team.
+          </p>
+          <div class="hero-cta-row">
+            <a class="btn btn-primary" href="mailto:shashaankreddy01@gmail.com">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              Email Me
+            </a>
+            <a class="btn btn-outline" href="https://www.linkedin.com/in/shashaank-reddy-g/" target="_blank" rel="noopener">
+              Connect on LinkedIn
+            </a>
           </div>
         </div>
       </section>
     </main>
 
+    <!-- ====== FOOTER ====== -->
     <footer class="footer">
-      <p>© <span id="year"></span> Shashaank Reddy Gurrala</p>
+      <div class="footer-content">
+        <p>Designed & built by Shashaank Reddy Gurrala</p>
+        <p class="footer-copy">&copy; <span id="year"></span> All rights reserved.</p>
+      </div>
     </footer>
 
     <script src="script.js"></script>

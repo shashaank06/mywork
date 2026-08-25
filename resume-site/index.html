@@ -3,164 +3,494 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Shashaank Reddy Gurrala - Data Engineer portfolio website with healthcare experience focus" />
+    <meta name="description" content="Shashaank Reddy Gurrala — Data Engineer with 5+ years building cloud-native data platforms on Azure, Databricks & Snowflake for healthcare and financial services." />
+    <meta name="keywords" content="Data Engineer, Azure, Databricks, PySpark, Snowflake, ETL, Healthcare Analytics, Portfolio" />
     <title>Shashaank Reddy Gurrala | Data Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="background-orb orb-one"></div>
-    <div class="background-orb orb-two"></div>
-
-    <header class="hero">
-      <nav class="nav">
+    <!-- ====== NAV ====== -->
+    <nav class="nav" id="nav">
+      <a href="#" class="nav-logo">SG<span class="logo-dot">.</span></a>
+      <div class="nav-links" id="nav-links">
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
         <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
         <a href="#education">Education</a>
-      </nav>
+        <a href="#contact">Contact</a>
+      </div>
+      <a class="nav-cta" href="assets/Shashaank_Gurrala_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
 
-      <div class="hero-content">
-        <div class="hero-copy">
-          <div class="hero-text">
-            <p class="eyebrow">Data Engineer • Azure • Databricks • Cloud Data Engineering</p>
-            <h1>Shashaank Reddy Gurrala</h1>
-            <p class="lead">
-              Data Engineer with 5+ years of experience designing and scaling cloud-native data platforms for healthcare and financial services.
-              I build robust ETL pipelines, strengthen data governance, and deliver measurable performance gains in HIPAA-sensitive analytics environments.
-            </p>
-            <div class="cta-row">
-              <a class="btn btn-primary" href="assets/Shashaank_Gurrala_Resume.pdf" target="_blank" rel="noopener">Download Resume</a>
-              <a class="btn btn-primary" href="healthcare.html">Healthcare Experience</a>
-              <a class="btn btn-primary" href="#experience">Projects</a>
-              <a class="btn btn-primary" href="#education">Achievements</a>
-            </div>
-          </div>
+    <!-- ====== HERO ====== -->
+    <header class="hero" id="hero">
+      <div class="hero-bg-grid"></div>
+      <div class="hero-glow hero-glow-1"></div>
+      <div class="hero-glow hero-glow-2"></div>
 
-          <ul class="contact-list">
-            <li>shashaankreddy01@gmail.com</li>
-            <li>+1 (309) 831-9147</li>
-            <li><a href="https://www.linkedin.com/in/shashaank-reddy-g/" target="_blank" rel="noopener">LinkedIn</a></li>
-          </ul>
+      <div class="hero-content reveal">
+        <p class="hero-eyebrow">Data Engineer &bull; Azure &bull; Databricks &bull; Cloud Platforms</p>
+        <h1 class="hero-title">
+          Hi, I'm <span class="gradient-text">Shashaank Reddy</span>
+          <span class="hero-subtitle" id="typed-output"></span>
+        </h1>
+        <p class="hero-lead">
+          I design and scale <strong>cloud-native data platforms</strong> for healthcare and financial services.
+          5+ years of turning raw data into reliable, governed pipelines that power real business decisions.
+        </p>
+
+        <div class="hero-cta-row">
+          <a class="btn btn-primary" href="assets/Shashaank_Gurrala_Resume.pdf" target="_blank" rel="noopener">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download Resume
+          </a>
+          <a class="btn btn-outline" href="healthcare.html">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            Healthcare Deep-Dive
+          </a>
+          <a class="btn btn-ghost" href="#contact">Let's Connect</a>
+        </div>
+
+        <div class="hero-social">
+          <a href="https://www.linkedin.com/in/shashaank-reddy-g/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="https://github.com/shashaank06" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          </a>
+          <a href="mailto:shashaankreddy01@gmail.com" aria-label="Email">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </a>
         </div>
       </div>
     </header>
 
+    <!-- ====== METRICS BANNER ====== -->
+    <section class="metrics-banner">
+      <div class="metrics-grid reveal">
+        <div class="metric">
+          <span class="metric-number" data-target="5">0</span><span class="metric-suffix">+</span>
+          <span class="metric-label">Years Experience</span>
+        </div>
+        <div class="metric">
+          <span class="metric-number" data-target="17">0</span>
+          <span class="metric-label">Health Plans Served</span>
+        </div>
+        <div class="metric">
+          <span class="metric-number" data-target="40">0</span><span class="metric-suffix">%</span>
+          <span class="metric-label">ETL Time Reduced</span>
+        </div>
+        <div class="metric">
+          <span class="metric-number" data-target="3">0</span>
+          <span class="metric-label">Fortune 500 Companies</span>
+        </div>
+      </div>
+    </section>
+
     <main>
-      <section id="about" class="section card intro-card">
-        <div class="about-copy">
-          <h2>Professional Summary</h2>
-          <p>
-            Data Engineer with 5+ years of experience designing and scaling cloud-native data platforms for healthcare and financial services.
-            I build robust ETL pipelines on Azure and Databricks, strengthen data governance, and deliver measurable performance gains while
-            supporting HIPAA-sensitive analytics workloads.
-          </p>
+      <!-- ====== ABOUT ====== -->
+      <section id="about" class="section">
+        <div class="section-header reveal">
+          <span class="section-number">01</span>
+          <h2>About Me</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="about-grid reveal">
+          <div class="about-text">
+            <p>
+              I'm a <strong>Data Engineer</strong> who thrives at the intersection of cloud infrastructure and healthcare analytics.
+              Over the past 5+ years, I've built and scaled data platforms at <strong>Optum</strong>, <strong>Capital One</strong>,
+              and <strong>OpenText</strong> — processing millions of records through pipelines that are fast, governed, and production-hardened.
+            </p>
+            <p>
+              My specialty is turning complex, messy healthcare and financial data into clean, trustworthy pipelines on
+              <strong>Azure, Databricks, and Snowflake</strong>. I care deeply about data quality, HIPAA compliance, and
+              building systems that data teams can actually rely on.
+            </p>
+            <p>
+              When I'm not engineering pipelines, I'm exploring generative AI applications and contributing to open-source
+              data tooling. I hold a Master's in Computer Science from Illinois State University.
+            </p>
+          </div>
+          <div class="about-highlights">
+            <div class="highlight-card">
+              <div class="highlight-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+              </div>
+              <h4>Healthcare Focus</h4>
+              <p>PHI-sensitive pipelines, risk adjustment analytics, HIPAA compliance</p>
+            </div>
+            <div class="highlight-card">
+              <div class="highlight-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+              </div>
+              <h4>Cloud-Native</h4>
+              <p>Azure, Databricks, Snowflake, Delta Lake, Microsoft Fabric</p>
+            </div>
+            <div class="highlight-card">
+              <div class="highlight-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </div>
+              <h4>ETL Mastery</h4>
+              <p>CDC, SCD Type 1/2, medallion architecture, automated QA</p>
+            </div>
+          </div>
         </div>
       </section>
 
+      <!-- ====== EXPERIENCE ====== -->
       <section id="experience" class="section">
-        <div class="section-heading">
-          <h2>Professional Experience</h2>
+        <div class="section-header reveal">
+          <span class="section-number">02</span>
+          <h2>Experience</h2>
+          <div class="section-line"></div>
         </div>
 
-        <div class="card experience-item">
-          <div class="item-header">
-            <h3>Optum — Data Engineer</h3>
-            <span>June 2024 – Present</span>
+        <div class="timeline">
+          <!-- Optum -->
+          <div class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content card">
+              <div class="exp-header">
+                <div>
+                  <h3>Data Engineer</h3>
+                  <p class="exp-company">Optum (UnitedHealth Group)</p>
+                </div>
+                <div class="exp-meta">
+                  <span class="exp-date">Jun 2024 — Present</span>
+                  <span class="exp-location">Remote &bull; San Antonio, TX</span>
+                </div>
+              </div>
+              <ul class="exp-bullets">
+                <li>Architected multi-client ingestion pipelines across <strong>Azure Data Factory, Databricks, and Snowflake</strong>, moving JSON, CSV, and Parquet data into ADLS and Delta Lake with Unity Catalog RBAC for PHI-sensitive environments.</li>
+                <li>Re-engineered core ETL with <strong>CDC and SCD Type 1/2 patterns</strong>, reducing daily processing time by <strong>40%</strong> and enabling low-latency analytics for a risk-adjustment platform serving <strong>17 major U.S. health plans</strong>.</li>
+                <li>Delivered two production PySpark analytics frameworks using AI-assisted development, accelerating stakeholder reporting through automated QA and SonarQube compliance.</li>
+                <li>Consolidated platform onto <strong>Microsoft Fabric</strong> and introduced Databricks Genie for self-service analytics on curated Gold-layer datasets.</li>
+              </ul>
+              <div class="exp-tags">
+                <span>Azure Data Factory</span><span>Databricks</span><span>Snowflake</span><span>PySpark</span><span>Delta Lake</span><span>Microsoft Fabric</span>
+              </div>
+            </div>
           </div>
-          <p class="item-location">Remote • San Antonio, Texas</p>
-          <ul>
-            <li>Architected and scaled multi-client ingestion pipelines across Azure Data Factory, Databricks, and Snowflake to move JSON, CSV, and Parquet data into ADLS and Delta Lake with Unity Catalog RBAC for PHI-sensitive environments.</li>
-            <li>Re-engineered the core ETL workflow with CDC and SCD Type 1/2 patterns, reducing daily processing time by 40% and enabling low-latency analytics for a risk-adjustment platform serving 17 major U.S. health plans.</li>
-            <li>Delivered two production PySpark analytics frameworks using AI-assisted development, accelerating stakeholder reporting and tightening validation through automated QA and SonarQube compliance.</li>
-            <li>Consolidated the platform onto Microsoft Fabric and introduced Databricks Genie to empower business users with self-service analytics on curated Gold-layer datasets.</li>
-          </ul>
-        </div>
 
-        <div class="card experience-item">
-          <div class="item-header">
-            <h3>Capital One — Data Engineer</h3>
-            <span>January 2023 – May 2024</span>
+          <!-- Capital One -->
+          <div class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content card">
+              <div class="exp-header">
+                <div>
+                  <h3>Data Engineer</h3>
+                  <p class="exp-company">Capital One</p>
+                </div>
+                <div class="exp-meta">
+                  <span class="exp-date">Jan 2023 — May 2024</span>
+                  <span class="exp-location">Remote &bull; Normal, IL</span>
+                </div>
+              </div>
+              <ul class="exp-bullets">
+                <li>Led large-scale migration of <strong>tens of terabytes</strong> from on-prem SQL Server, MongoDB, Cassandra, and Oracle into ADLS Gen2 and Azure Synapse using ADF and Self-Hosted Integration Runtime.</li>
+                <li>Modernized legacy Oracle ETL into cloud-native <strong>Python, PySpark, and PL/SQL</strong> pipelines with Databricks-based validation across all migrated sources.</li>
+                <li>Implemented <strong>Delta Lake and CDC/SCD patterns</strong> to improve reliability, reduce reprocessing for late-arriving data, and support near real-time reporting.</li>
+                <li>Optimized Snowflake warehouse configuration and data modeling for enterprise BI and Power BI, improving auditability through Time Travel and governance controls.</li>
+              </ul>
+              <div class="exp-tags">
+                <span>Azure Synapse</span><span>ADLS Gen2</span><span>PySpark</span><span>Snowflake</span><span>Power BI</span><span>Oracle</span>
+              </div>
+            </div>
           </div>
-          <p class="item-location">Remote • Normal, Illinois</p>
-          <ul>
-            <li>Led a large-scale migration of tens of terabytes of data from on-prem SQL Server, MongoDB, Cassandra, and Oracle into ADLS Gen2 and Azure Synapse using ADF and Self-Hosted Integration Runtime.</li>
-            <li>Modernized legacy Oracle ETL into cloud-native Python, PySpark, and PL/SQL pipelines with Databricks-based validation to maintain consistency across all migrated sources.</li>
-            <li>Implemented Delta Lake and CDC/SCD patterns to improve reliability, reduce reprocessing for late-arriving data, and support near real-time reporting.</li>
-            <li>Optimized Snowflake warehouse configuration and data modeling for enterprise BI and Power BI performance, while improving auditability through Time Travel and governance controls.</li>
-          </ul>
-        </div>
 
-        <div class="card experience-item">
-          <div class="item-header">
-            <h3>OpenText — Data Engineer</h3>
-            <span>June 2020 – December 2021</span>
+          <!-- OpenText -->
+          <div class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content card">
+              <div class="exp-header">
+                <div>
+                  <h3>Data Engineer</h3>
+                  <p class="exp-company">OpenText</p>
+                </div>
+                <div class="exp-meta">
+                  <span class="exp-date">Jun 2020 — Dec 2021</span>
+                  <span class="exp-location">Chennai, India</span>
+                </div>
+              </div>
+              <ul class="exp-bullets">
+                <li>Engineered <strong>B2B EDI ingestion pipelines</strong> for X12 850, 810, and 856 transactions, transforming purchase orders, invoices, and shipment notices into structured Parquet.</li>
+                <li>Automated file-arrival monitoring and pipeline triggering with <strong>Python and Azure Blob Storage SDKs</strong>, eliminating hours of manual intervention weekly.</li>
+                <li>Built <strong>Snowflake-based SCD Type 2 pipelines</strong> to track historical changes in supplier and product master data for vendor and inventory analytics.</li>
+                <li>Developed real-time event ingestion and API integration workflows improving data freshness, compliance auditing, and partner data automation.</li>
+              </ul>
+              <div class="exp-tags">
+                <span>Python</span><span>Snowflake</span><span>Azure Blob</span><span>EDI/X12</span><span>Parquet</span><span>API Integration</span>
+              </div>
+            </div>
           </div>
-          <p class="item-location">Chennai, India</p>
-          <ul>
-            <li>Engineered B2B EDI ingestion pipelines for X12 850, 810, and 856 transactions, transforming purchase orders, invoices, and shipment notices into structured Parquet for downstream reconciliation.</li>
-            <li>Automated file-arrival monitoring and pipeline triggering with Python and Azure Blob Storage SDKs, eliminating hours of manual intervention each week.</li>
-            <li>Built Snowflake-based SCD Type 2 pipelines to track historical changes in supplier and product master data, enabling vendor and inventory analytics.</li>
-            <li>Developed real-time event ingestion and API integration workflows that improved data freshness, compliance auditing, and partner data automation.</li>
-          </ul>
         </div>
       </section>
 
-      <section id="skills" class="section grid">
-        <div class="card">
-          <h3>Core Skills</h3>
-          <ul>
-            <li>Azure Data Factory</li>
-            <li>Azure Databricks</li>
-            <li>ADLS Gen2</li>
-            <li>PySpark / Spark SQL</li>
-            <li>Delta Lake</li>
-            <li>Snowflake</li>
-          </ul>
+      <!-- ====== SKILLS ====== -->
+      <section id="skills" class="section">
+        <div class="section-header reveal">
+          <span class="section-number">03</span>
+          <h2>Technical Skills</h2>
+          <div class="section-line"></div>
         </div>
-        <div class="card">
-          <h3>Data & Cloud</h3>
-          <ul>
-            <li>Azure Synapse</li>
-            <li>Azure Event Hubs</li>
-            <li>Stream Analytics</li>
-            <li>Logic Apps / Functions</li>
-            <li>SQL Server / Azure SQL / Oracle / Cosmos DB</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>Languages & Modeling</h3>
-          <ul>
-            <li>SQL / PL/SQL</li>
-            <li>Python</li>
-            <li>HiveQL / Scala / Java</li>
-            <li>Star Schema / Snowflake Schema</li>
-            <li>Kafka • Git • Azure DevOps • SonarQube</li>
-          </ul>
+
+        <div class="skills-grid reveal">
+          <div class="skill-category card">
+            <div class="skill-cat-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <h3>Cloud & Data Platforms</h3>
+            <div class="skill-tags">
+              <span class="skill-tag tag-primary">Azure Data Factory</span>
+              <span class="skill-tag tag-primary">Azure Databricks</span>
+              <span class="skill-tag tag-primary">ADLS Gen2</span>
+              <span class="skill-tag tag-primary">Azure Synapse</span>
+              <span class="skill-tag tag-secondary">Microsoft Fabric</span>
+              <span class="skill-tag tag-secondary">Event Hubs</span>
+              <span class="skill-tag tag-secondary">Stream Analytics</span>
+              <span class="skill-tag tag-secondary">Logic Apps</span>
+              <span class="skill-tag tag-secondary">Azure Functions</span>
+              <span class="skill-tag tag-secondary">Key Vault</span>
+            </div>
+          </div>
+
+          <div class="skill-category card">
+            <div class="skill-cat-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5V19A9 3 0 0 0 21 19V5"/><path d="M3 12A9 3 0 0 0 21 12"/></svg>
+            </div>
+            <h3>Big Data & Databases</h3>
+            <div class="skill-tags">
+              <span class="skill-tag tag-primary">Spark / PySpark</span>
+              <span class="skill-tag tag-primary">Delta Lake</span>
+              <span class="skill-tag tag-primary">Snowflake</span>
+              <span class="skill-tag tag-secondary">HDFS</span>
+              <span class="skill-tag tag-secondary">Hive</span>
+              <span class="skill-tag tag-secondary">Kafka</span>
+              <span class="skill-tag tag-secondary">SQL Server</span>
+              <span class="skill-tag tag-secondary">Oracle</span>
+              <span class="skill-tag tag-secondary">Azure SQL</span>
+              <span class="skill-tag tag-secondary">Cosmos DB</span>
+            </div>
+          </div>
+
+          <div class="skill-category card">
+            <div class="skill-cat-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <h3>Languages & Modeling</h3>
+            <div class="skill-tags">
+              <span class="skill-tag tag-primary">SQL / PL/SQL</span>
+              <span class="skill-tag tag-primary">Python</span>
+              <span class="skill-tag tag-primary">Spark SQL</span>
+              <span class="skill-tag tag-secondary">HiveQL</span>
+              <span class="skill-tag tag-secondary">Scala</span>
+              <span class="skill-tag tag-secondary">Java</span>
+              <span class="skill-tag tag-secondary">Star Schema</span>
+              <span class="skill-tag tag-secondary">Snowflake Schema</span>
+              <span class="skill-tag tag-secondary">ER/Studio</span>
+            </div>
+          </div>
+
+          <div class="skill-category card">
+            <div class="skill-cat-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3>DevOps & Governance</h3>
+            <div class="skill-tags">
+              <span class="skill-tag tag-primary">Git / GitHub</span>
+              <span class="skill-tag tag-primary">Azure DevOps</span>
+              <span class="skill-tag tag-primary">CI/CD</span>
+              <span class="skill-tag tag-secondary">SonarQube</span>
+              <span class="skill-tag tag-secondary">Unity Catalog</span>
+              <span class="skill-tag tag-secondary">RBAC</span>
+              <span class="skill-tag tag-secondary">HIPAA</span>
+              <span class="skill-tag tag-secondary">Data Governance</span>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section id="education" class="section card">
-        <h2>Education & Certifications</h2>
-        <div class="edu-list">
-          <div>
-            <h3>Master of Science, Computer Science and Engineering</h3>
-            <p>Illinois State University • Jan 2022 – Dec 2023</p>
+      <!-- ====== PROJECTS ====== -->
+      <section id="projects" class="section">
+        <div class="section-header reveal">
+          <span class="section-number">04</span>
+          <h2>Key Projects</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="projects-grid reveal">
+          <div class="project-card card">
+            <div class="project-icon project-icon-health">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            </div>
+            <h3>Prospective Risk Analytics Platform</h3>
+            <p class="project-company">Optum</p>
+            <p>Architected an end-to-end ingestion and analytics platform for Medicare Advantage risk adjustment, serving 17 major health plans with PHI-governed pipelines processing claims, clinical, pharmacy, and lab data through a medallion architecture.</p>
+            <div class="project-impact">
+              <span>40% faster ETL</span>
+              <span>17 health plans</span>
+              <span>PHI compliant</span>
+            </div>
+            <div class="exp-tags">
+              <span>ADF</span><span>Databricks</span><span>Delta Lake</span><span>PySpark</span><span>Unity Catalog</span>
+            </div>
           </div>
-          <div>
-            <h3>Bachelor of Technology, Computer Science Engineering (Data Analytics)</h3>
-            <p>Veltech University • Jun 2017 – May 2021</p>
+
+          <div class="project-card card">
+            <div class="project-icon project-icon-cloud">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+            </div>
+            <h3>Enterprise Cloud Migration</h3>
+            <p class="project-company">Capital One</p>
+            <p>Led the migration of tens of terabytes from on-prem SQL Server, MongoDB, Cassandra, and Oracle into ADLS Gen2 and Azure Synapse. Modernized legacy ETL into cloud-native pipelines with Databricks-based validation and near real-time reporting.</p>
+            <div class="project-impact">
+              <span>Multi-TB scale</span>
+              <span>4 source DBs</span>
+              <span>Near real-time</span>
+            </div>
+            <div class="exp-tags">
+              <span>Azure Synapse</span><span>ADF</span><span>PySpark</span><span>Delta Lake</span><span>Power BI</span>
+            </div>
           </div>
-          <div>
+
+          <div class="project-card card">
+            <div class="project-icon project-icon-data">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+            </div>
+            <h3>B2B EDI Data Pipeline</h3>
+            <p class="project-company">OpenText</p>
+            <p>Engineered automated ingestion pipelines for X12 EDI transactions (850, 810, 856), transforming purchase orders, invoices, and shipment notices into structured Parquet with SCD Type 2 tracking for supplier master data.</p>
+            <div class="project-impact">
+              <span>3 EDI formats</span>
+              <span>Automated monitoring</span>
+              <span>Historical tracking</span>
+            </div>
+            <div class="exp-tags">
+              <span>Python</span><span>Snowflake</span><span>Azure Blob</span><span>Parquet</span><span>SCD Type 2</span>
+            </div>
+          </div>
+
+          <div class="project-card card">
+            <div class="project-icon project-icon-ai">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 0-4 4v2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2h-2V6a4 4 0 0 0-4-4z"/><circle cx="12" cy="15" r="2"/></svg>
+            </div>
+            <h3>Self-Service Analytics with Fabric & Genie</h3>
+            <p class="project-company">Optum</p>
+            <p>Consolidated the data platform onto Microsoft Fabric and introduced Databricks Genie for natural-language self-service analytics, empowering business users to query curated Gold-layer datasets without engineering support.</p>
+            <div class="project-impact">
+              <span>Self-service BI</span>
+              <span>NL queries</span>
+              <span>Gold layer</span>
+            </div>
+            <div class="exp-tags">
+              <span>Microsoft Fabric</span><span>Databricks Genie</span><span>Delta Lake</span><span>Power BI</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====== EDUCATION ====== -->
+      <section id="education" class="section">
+        <div class="section-header reveal">
+          <span class="section-number">05</span>
+          <h2>Education & Certifications</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="edu-grid reveal">
+          <div class="edu-card card">
+            <div class="edu-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m4 6 8-4 8 4"/><path d="m18 10 4 2-10 5L2 12l4-2"/><path d="M6 12v5c3 3 6 3 6 3s3 0 6-3v-5"/></svg>
+            </div>
+            <h3>Master of Science</h3>
+            <p class="edu-field">Computer Science and Engineering</p>
+            <p class="edu-school">Illinois State University</p>
+            <span class="edu-date">Jan 2022 — Dec 2023</span>
+          </div>
+
+          <div class="edu-card card">
+            <div class="edu-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m4 6 8-4 8 4"/><path d="m18 10 4 2-10 5L2 12l4-2"/><path d="M6 12v5c3 3 6 3 6 3s3 0 6-3v-5"/></svg>
+            </div>
+            <h3>Bachelor of Technology</h3>
+            <p class="edu-field">Computer Science Engineering (Data Analytics)</p>
+            <p class="edu-school">Veltech University</p>
+            <span class="edu-date">Jun 2017 — May 2021</span>
+          </div>
+
+          <div class="edu-card card cert-card">
+            <div class="edu-icon cert-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"/></svg>
+            </div>
             <h3>Certifications</h3>
-            <p>Databricks Academy Accreditation — Generative AI Fundamentals</p>
-            <p>Generative AI for Everyone — DeepLearning.AI</p>
+            <div class="cert-list">
+              <div class="cert-item">
+                <span class="cert-badge">Databricks</span>
+                <span>Generative AI Fundamentals — Databricks Academy</span>
+              </div>
+              <div class="cert-item">
+                <span class="cert-badge">DeepLearning.AI</span>
+                <span>Generative AI for Everyone</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====== CONTACT ====== -->
+      <section id="contact" class="section">
+        <div class="section-header reveal">
+          <span class="section-number">06</span>
+          <h2>Get In Touch</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="contact-content reveal">
+          <p class="contact-lead">
+            I'm open to new opportunities, especially in <strong>data engineering</strong>, <strong>cloud platforms</strong>,
+            and <strong>healthcare analytics</strong>. Whether you're hiring or want to collaborate, let's talk.
+          </p>
+
+          <div class="contact-grid">
+            <a href="mailto:shashaankreddy01@gmail.com" class="contact-card card">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              <h4>Email</h4>
+              <span>shashaankreddy01@gmail.com</span>
+            </a>
+            <a href="tel:+13098319147" class="contact-card card">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <h4>Phone</h4>
+              <span>+1 (309) 831-9147</span>
+            </a>
+            <a href="https://www.linkedin.com/in/shashaank-reddy-g/" target="_blank" rel="noopener" class="contact-card card">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              <h4>LinkedIn</h4>
+              <span>linkedin.com/in/shashaank-reddy-g</span>
+            </a>
+            <a href="https://github.com/shashaank06" target="_blank" rel="noopener" class="contact-card card">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              <h4>GitHub</h4>
+              <span>github.com/shashaank06</span>
+            </a>
           </div>
         </div>
       </section>
     </main>
 
+    <!-- ====== FOOTER ====== -->
     <footer class="footer">
-      <p>© <span id="year"></span> Shashaank Reddy Gurrala</p>
+      <div class="footer-content">
+        <p>Designed & built by Shashaank Reddy Gurrala</p>
+        <p class="footer-copy">&copy; <span id="year"></span> All rights reserved.</p>
+      </div>
     </footer>
 
     <script src="script.js"></script>
