@@ -14,6 +14,7 @@
     'I build scalable data pipelines.',
     'I engineer cloud-native platforms.',
     'I power healthcare analytics.',
+    'I modernize with DBT & Airflow.',
     'I turn data into decisions.',
   ];
   const typedEl = document.getElementById('typed-output');
