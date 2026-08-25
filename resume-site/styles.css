@@ -631,6 +631,68 @@ main {
   border-bottom-color: #a5b4fc;
 }
 
+/* --- Standalone Certifications Section --- */
+.certs-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.cert-card-standalone {
+  display: flex; align-items: center; gap: 1rem;
+  padding: 1.2rem 1.5rem;
+  text-decoration: none; color: inherit;
+  transition: border-color var(--transition), transform var(--transition), box-shadow var(--transition);
+  cursor: pointer;
+}
+.cert-card-standalone:hover {
+  border-color: var(--accent);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 30px rgba(99,102,241,0.12);
+}
+.cert-card-badge {
+  flex-shrink: 0;
+  width: 48px; height: 48px;
+  border-radius: 12px;
+  display: flex; align-items: center; justify-content: center;
+}
+.cert-card-badge.microsoft {
+  background: rgba(99,102,241,0.12);
+  color: var(--accent);
+}
+.cert-card-badge.databricks {
+  background: rgba(251,146,60,0.12);
+  color: var(--orange);
+}
+.cert-card-badge.deeplearning {
+  background: rgba(34,211,238,0.12);
+  color: var(--cyan);
+}
+.cert-card-content {
+  flex: 1; min-width: 0;
+}
+.cert-card-content .cert-badge { margin-bottom: 0.3rem; }
+.cert-card-content h4 {
+  font-size: 0.95rem; font-weight: 700;
+  color: var(--heading);
+  margin: 0 0 0.15rem;
+  line-height: 1.3;
+}
+.cert-card-id {
+  font-size: 0.78rem; color: var(--text-muted);
+  margin: 0; font-family: var(--mono);
+}
+.cert-card-arrow {
+  flex-shrink: 0;
+  font-size: 1.2rem; color: var(--text-muted);
+  transition: color var(--transition), transform var(--transition);
+}
+.cert-card-standalone:hover .cert-card-arrow {
+  color: var(--accent);
+  transform: translateX(3px);
+}
+
 /* ============ CONTACT ============ */
 .contact-content { text-align: center; }
 .contact-lead {
@@ -687,6 +749,7 @@ main {
   .skills-grid { grid-template-columns: 1fr; }
   .projects-grid { grid-template-columns: 1fr; }
   .edu-grid { grid-template-columns: 1fr; }
+  .certs-grid { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: repeat(2, 1fr); }
   .about-grid { grid-template-columns: 1fr; }
   .metrics-grid { grid-template-columns: repeat(2, 1fr); }
